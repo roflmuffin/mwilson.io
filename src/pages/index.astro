@@ -45,45 +45,19 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 ---
 
 <BaseLayout title="Home">
-	<section>
-		<h1 class="title">about</h1>
-		<p class="mb-2 sm:mb-4">
-			I'm an Australian senior software engineer who loves the idea of using the simplest technologies to achieve complex outcomes. I'm particularly passionate about improving developer experience so that every engineer I work with is empowered to answer with "yeah that should be easy to implement".
-		</p>
-		<p class="mb-2 sm:mb-4">
-			I studied a mixture of software & marketing at <a class="link" href="https://www.qut.edu.au/" target="_blank">Queensland University of Technology</a> and am currently <a class="link" href="mailto:shortguy014@gmail.com">open to work</a>. I currently live in Brisbane.
-		</p>
-		<div>
-			<span>You can find me on: </span>
-			<SocialMediaLinks/>
-		</div>
-	</section>
+	<h1 class="title">about</h1>
+	<p class="mb-4">
+		I'm an Australian senior software engineer who loves the idea of using the simplest technologies to achieve complex outcomes. I'm particularly passionate about improving developer experience so that every engineer I work with is empowered to answer with "yeah that should be easy to implement".
+	</p>
+	<p class="mb-4">
+		I studied a mixture of software & marketing at <a class="link" href="https://www.qut.edu.au/" target="_blank">Queensland University of Technology</a> and am currently <a class="link" href="mailto:shortguy014@gmail.com?subject=Work%20Opportunity">open to work</a>. I currently live in Brisbane.
+	</p>
+	<p class="mb-4">
+		In my spare time I maintain an <a class="link" href="https://github.com/roflmuffin/CounterStrikeSharp" target="_blank">open-source server side modding framework</a> for <a class="link" href="https://www.counter-strike.net/cs2" target="_blank">Counter-Strike 2</a> in a mixture of .NET & C++.
+	</p>
 
-	<section class="mt-8 sm:mt-16">
-		<h2 class="title">Posts</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{allPostsByPinned.map(p => <PostPreview post={p}/>)}
-		</ul>
-	</section>
-
-	<section class="mt-16">
-			<h2 class="title">Technologies</h2>
-			<ul class="space-y-4 sm:space-y-2">
-				{
-					tech.map(({ href, title, desc }) => (
-						<li>
-							<a
-								href={href}
-								target="_blank"
-								rel="noopener noreferrer"
-								class="cody-link inline-block"
-							>
-								{title}
-							</a>: 
-							<p class="inline-block sm:mt-2">{desc}</p>
-						</li>
-					))
-				}
-			</ul>
-		</section>
+	<div>
+		<span>You can find me on: </span>
+		<SocialMediaLinks/>
+	</div>
 </BaseLayout>

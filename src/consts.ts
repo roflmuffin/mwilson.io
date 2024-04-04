@@ -51,12 +51,5 @@ export const socialLinks: Array<SocialLink> = [
 ];
 
 export const NAV_LINKS: Array<{ title: string, path: string }> = [
-  {
-    title: "about",
-    path: "/about",
-  },
-  {
-    title: "projects",
-    path: '/projects'
-  }
+
 ];

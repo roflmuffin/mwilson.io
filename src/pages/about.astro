@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Base.astro';
+import SocialMediaLinks from "@/components/SocialMediaLinks";
 ---
 
 <Layout
@@ -14,8 +15,13 @@ import Layout from '../layouts/Base.astro';
 <p class="mb-4">
 	I studied a mixture of software & marketing at <a class="link" href="https://www.qut.edu.au/" target="_blank">Queensland University of Technology</a> and am currently <a class="link" href="mailto:shortguy014@gmail.com?subject=Work%20Opportunity">open to work</a>. I currently live in Brisbane.
 </p>
-<p>
-	In my spare time I maintain an open-source server side modding framework for <a class="link" href="https://www.counter-strike.net/cs2" target="_blank">Counter-Strike 2</a> in a mixture of .NET & C++.
+<p class="mb-4">
+	In my spare time I maintain an <a class="link" href="https://github.com/roflmuffin/CounterStrikeSharp" target="_blank">open-source server side modding framework</a> for <a class="link" href="https://www.counter-strike.net/cs2" target="_blank">Counter-Strike 2</a> in a mixture of .NET & C++.
 </p>
+
+<div>
+	<span>You can find me on: </span>
+	<SocialMediaLinks/>
+</div>
 </Layout>
 
