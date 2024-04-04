@@ -31,14 +31,14 @@ const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`;
 
 <!-- Primary Meta Tags -->
 <title>{siteTitle}</title>
-<meta name="title" content={title} />
+<meta name="title" content={siteTitle} />
 <meta name="description" content={description} />
 <meta name="author" content={siteConfig.profile.author} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.url} />
-<meta property="og:title" content={title} />
+<meta property="og:title" content={siteTitle} />
 <meta property="og:description" content={description} />
 {
 	articleDate && (
